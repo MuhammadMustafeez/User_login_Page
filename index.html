@@ -7,23 +7,31 @@
     <link rel="stylesheet" href="./Css/style.css">
 </head>
 <body>
-    <div class="border">
-        <div class="border1">
+    <div class="containor">
+        <div class="wrapper-1">
             <img src="./Icons/Icon.png" alt="Muhammad">
             <h1>Welcome Back!</h1>
         </div>
-        <div class="border2">
+        <div class="wrapper-2">
             <form>
-                <h3>login</h3>
+                <h2>login</h2>
                 <h4>Welcome back! Please login to your account.</h4>
-                <label> User Name</label>
-                <input type="text" name="Name">
-                <label> Password</label>
-                <input type="password" name="Password">
-                <input type="checkbox">Remember Me
-                <a href="">Forget Me?</a>
-                <button>Login</button>
-                <p>New User? <a href="#"> Sign Up</a></p>
+                <div class="input-box">
+                    <label> User Name</label>
+                    <input type="text" placeholder="UserName" required>
+                </div>
+                <div class="input-box">
+                    <label> Password</label>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">Remember Me</label>
+                    <a href="#">Forget Me?</a>
+                </div>
+                <button type="submit" class="btn">Log in</button>
+                <div class="register">
+                   <p>New User? <a href="#">Sign Up</a></p> 
+                </div>
             </form>
         </div>
     </div>
